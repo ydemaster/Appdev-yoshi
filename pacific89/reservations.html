@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pacific Trails Resort :: Reservations</title>
+  <link rel="stylesheet" href="pacific.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Pacific Trails Resort</a></h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="yurts.html">Yurts</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="reservations.html">Reservations</a></li>
+  </ul>
+</nav>
+
+<div id="wrapper">
+  <div id="reshero"></div>
+
+  <main>
+    <h2>Reservations at Pacific Trails</h2>
+    <h3>Contact Us</h3>
+    <p>Required fields are marked with an asterisk (*).</p>
+
+    <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+      <label for="myFName">*First Name:</label>
+      <input type="text" id="myFName" name="myFName" required>
+
+      <label for="myLName">*Last Name:</label>
+      <input type="text" id="myLName" name="myLName" required>
+
+      <label for="myAddress">Mailing Address:</label>
+      <input type="text" id="myAddress" name="myAddress">
+
+      <label for="myEmail">*Email:</label>
+      <input type="email" id="myEmail" name="myEmail" required>
+
+      <label for="myPhone">Phone:</label>
+      <input type="tel" id="myPhone" name="myPhone">
+
+      <label for="myArrivalDate">Arrival Date:</label>
+      <input type="date" id="myArrivalDate" name="myArrivalDate">
+
+      <label for="myDepartureDate">Departure Date:</label>
+      <input type="date" id="myDepartureDate" name="myDepartureDate">
+
+      <label for="myNights">Nights:</label>
+      <input type="number" id="myNights" name="myNights" min="1" max="30">
+
+      <label for="myComments">*Comments:</label>
+      <textarea id="myComments" name="myComments" rows="2" required></textarea>
+
+      <input type="submit" id="mySubmit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    Copyright © 2020 Pacific Trails Resort<br>
+    <a href="mailto:yoshiyadesir@gmail.com">yoshi</a>
+  </footer>
+</div>
+</body>
+</html>
