@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YD Mobility Group | Auto Sales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="YD Mobility Group logo">
+      <div>
+        <strong>YD Mobility Group</strong>
+        <span>Auto Sales • Clean Inventory • Simple Process</span>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Primary">
+      <a class="active" href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="about.html">About</a>
+      <a href="consignment.html">Consignment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+      <div class="heroCard">
+        <div class="heroMedia" role="img" aria-label="Luxury car background image"> <img src="assets/hero.jpg" alt="car"></div>
+        <div class="heroBody">
+          <div class="kicker"><b>INDIANA</b> • Pre-Owned Vehicles</div>
+          <h1>Professional auto sales with a clean, simple buying experience.</h1>
+          <p>
+            YD Mobility Group is built around transparency, clean presentation, and respectful communication.
+            Browse inventory, check key details, and reach out when you’re ready.
+          </p>
+          <div class="heroActions">
+            <a class="btn primary" href="inventory.html">View Inventory</a>
+            <a class="btn" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pad">
+          <div class="pills" style="margin-bottom:.8rem;">
+          </div>
+
+          <div class="grid" style="gap:.85rem;">
+            <div class="feature">
+              <div class="icon">✓</div>
+              <div>
+                <h3>Clear Listings</h3>
+                <p>Year, mileage, price, and key notes shown up front.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">★</div>
+              <div>
+                <h3>Clean Presentation</h3>
+                <p>Photos and details that help you decide faster.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">↯</div>
+              <div>
+                <h3>Fast Communication</h3>
+                <p>Quick replies and simple next steps.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem; display:flex; gap:.7rem; flex-wrap:wrap;">
+            <a class="btn primary" href="contact.html">Ask a Question</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Featured Inventory</h2>
+      </div>
+
+      <div class="grid cards">
+        <article class="card invCard">
+          <div class="media">
+            <img src="assets/car1.jpg" alt="car">
+          </div>
+          <div class="pad">
+            <div class="pills">
+              <span class="pill good">Available</span>
+            </div>
+            <h3>2016 Honda</h3>
+            <p class="meta">86,000 miles • Automatic • AWD</p>
+            <div class="priceRow">
+              <div>
+                <div class="price">$14,900</div>
+                <div class="small">Indianapolis, IN</div>
+              </div>
+              <a class="btn" href="inventory.html">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card invCard">
+          <div class="media">
+            <img src="assets/car2.jpg" alt="car">
+          </div>
+          <div class="pad">
+            <div class="pills">
+              <span class="pill good">Available</span>
+            </div>
+            <h3>2018 Mini Cooper</h3>
+            <p class="meta">72,000 miles • Automatic • FWD</p>
+            <div class="priceRow">
+              <div>
+                <div class="price">$18,500</div>
+                <div class="small">Indianapolis, IN</div>
+              </div>
+              <a class="btn" href="inventory.html">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card invCard">
+          <div class="media">
+            <img src="assets/car3.jpg" alt="car">
+          </div>
+          <div class="pad">
+            <div class="pills">
+              <span class="pill warn">Coming soon</span>
+            </div>
+            <h3>2014 Fiat 500</h3>
+            <p class="meta">110,000 miles • Automatic • FWD</p>
+            <div class="priceRow">
+              <div>
+                <div class="price">$10,900</div>
+                <div class="small">Indianapolis, IN</div>
+              </div>
+              <a class="btn" href="inventory.html">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footerGrid">
+    <div>
+      <div class="row">
+        <strong style="color:var(--text);">YD Mobility Group</strong>
+        <span>© <span id="year"></span></span>
+      </div>
+      <div class="small">Professional auto sales</div>
+    </div>
+    <div class="row">
+      <a class="btn" href="contact.html">Email / Contact</a>
+      <a class="btn" href="inventory.html">Browse Inventory</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

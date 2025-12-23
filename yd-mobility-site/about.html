@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | YD Mobility Group</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="YD Mobility Group logo">
+      <div>
+        <strong>YD Mobility Group</strong>
+        <span>Auto Sales • Clean Inventory • Simple Process</span>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a class="active" href="about.html">About</a>
+      <a href="consignment.html">Consignment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="container">
+    <div class="sectionTitle">
+      <h2>About YD Mobility Group</h2>
+      <p>Our focus is clarity, quality, and respect.</p>
+    </div>
+
+    <div class="split">
+      <div class="card">
+        <div class="pad">
+          <h3>Mission</h3>
+          <p class="small">
+            YD Mobility Group exists to make buying a vehicle feel simple and honest.
+            We prioritize clean presentation, straightforward information, and communication that respects your time.
+          </p>
+
+          <div class="pills" style="margin-top:.9rem;">
+            <span class="pill brand">Transparency</span>
+            <span class="pill brand">Consistency</span>
+            <span class="pill brand">Professionalism</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pad">
+          <h3>What you’ll see on this site</h3>
+          <ul class="small" style="margin: .6rem 0 0; padding-left:1.1rem; color:var(--muted);">
+            <li>Vehicle listings with key details</li>
+            <li>Quick ways to contact us</li>
+            <li>Optional consignment info (sell your car with help)</li>
+          </ul>
+
+          <div style="margin-top:1rem;">
+            <a class="btn primary" href="inventory.html">Browse Inventory</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:1.2rem;">
+      <div class="card">
+        <div class="pad">
+          <h3>Service Area</h3>
+          <p class="small">
+            Based in Indiana. We are here to help you obtain your dream car
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container footerGrid">
+    <div>
+      <div class="row">
+        <strong style="color:var(--text);">YD Mobility Group</strong>
+        <span>© <span id="year"></span></span>
+      </div>
+    </div>
+    <div class="row">
+      <a class="btn" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
