@@ -96,7 +96,7 @@ header{
 .menu{
   display:flex;
   align-items:center;
-  gap:.2rem;
+  gap:.25rem;
   flex-wrap:wrap;
   justify-content:flex-end;
 }
