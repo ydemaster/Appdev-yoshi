@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | YD Mobility Group</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="YD Mobility Group logo">
+      <div>
+        <strong>YD Mobility Group</strong>
+        <span>Auto Sales • Clean Inventory • Simple Process</span>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="inventory.html">Inventory</a>
+      <a href="about.html">About</a>
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="consignment.html">Consignment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="container">
+    <div class="sectionTitle">
+      <h2>Gallery</h2>
+      <p>Replace these with photos of your actual cars.</p>
+    </div>
+
+    <div class="grid cards">
+      <article class="card">
+        <div class="media" style="height:220px;">
+          <img src="assets/gallery-1.jpg" alt="Vehicle photo 1" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;media&quot; style=&quot;height:220px; display:grid; place-items:center; color:var(--muted);&quot;>Add assets/gallery-1.jpg</div>';">
+        </div>
+        <div class="pad">
+          <h3>Clean Inventory Presentation</h3>
+          <p class="small">Consistent photos and key details build trust.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media" style="height:220px;">
+          <img src="assets/gallery-2.jpg" alt="Vehicle photo 2" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;media&quot; style=&quot;height:220px; display:grid; place-items:center; color:var(--muted);&quot;>Add assets/gallery-2.jpg</div>';">
+        </div>
+        <div class="pad">
+          <h3>Before / After (Optional)</h3>
+          <p class="small">Use real photos to show improvements or condition.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="media" style="height:220px;">
+          <img src="assets/gallery-3.jpg" alt="Vehicle photo 3" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;media&quot; style=&quot;height:220px; display:grid; place-items:center; color:var(--muted);&quot;>Add assets/gallery-3.jpg</div>';">
+        </div>
+        <div class="pad">
+          <h3>Proof of Work</h3>
+          <p class="small">This page is great for credibility.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footerGrid">
+    <div>
+      <div class="row">
+        <strong style="color:var(--text);">YD Mobility Group</strong>
+        <span>© <span id="year"></span></span>
+      </div>
+      <div class="small">Gallery updates as cars move.</div>
+    </div>
+    <div class="row">
+      <a class="btn" href="inventory.html">Inventory</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
